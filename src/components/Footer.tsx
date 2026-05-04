@@ -106,7 +106,7 @@ export default function Footer() {
               <li>
                 <a href="mailto:evfast2024@gmail.com" className="flex items-center gap-3 text-sm text-white/50 hover:text-[var(--color-accent)] transition-colors">
                   <Mail size={16} className="text-[var(--color-accent)]" />
-                  info@evfastcharging.com
+                  evfast2024@gmail.com
                 </a>
               </li>
             </ul>
