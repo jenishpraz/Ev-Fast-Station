@@ -92,14 +92,14 @@ export default function Footer() {
               <li>
                 <a href="tel:+977 9851315997" className="flex items-center gap-3 text-sm text-white/50 hover:text-[var(--color-accent)] transition-colors">
                   <Phone size={16} className="text-[var(--color-accent)]" />
-                  +977 1-5909095
+                  +977 9851315997
                 </a>
               </li>
 
               <li>
                 <a href="tel:+977 9843176778" className="flex items-center gap-3 text-sm text-white/50 hover:text-[var(--color-accent)] transition-colors">
                   <Phone size={16} className="text-[var(--color-accent)]" />
-                  +86 183 8132 0802
+                  +977 9843176778
                 </a>
               </li>
 
