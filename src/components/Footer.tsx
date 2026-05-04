@@ -90,14 +90,14 @@ export default function Footer() {
               </li>
 
               <li>
-                <a href="tel:+8613880654253" className="flex items-center gap-3 text-sm text-white/50 hover:text-[var(--color-accent)] transition-colors">
+                <a href="tel:+977 9851315997" className="flex items-center gap-3 text-sm text-white/50 hover:text-[var(--color-accent)] transition-colors">
                   <Phone size={16} className="text-[var(--color-accent)]" />
-                  +86 138 8065 4253
+                  +977 1-5909095
                 </a>
               </li>
 
               <li>
-                <a href="tel:+8618381320802" className="flex items-center gap-3 text-sm text-white/50 hover:text-[var(--color-accent)] transition-colors">
+                <a href="tel:+977 9843176778" className="flex items-center gap-3 text-sm text-white/50 hover:text-[var(--color-accent)] transition-colors">
                   <Phone size={16} className="text-[var(--color-accent)]" />
                   +86 183 8132 0802
                 </a>
