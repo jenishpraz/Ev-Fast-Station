@@ -9,7 +9,7 @@ const ContactPage = () => {
 
       {/* Top Header Placeholder */}
       <header className="border-b border-gray-100 py-4 px-8 flex justify-between items-center">
-        <div className="text-green-600 font-bold text-2xl">wolun® <span className="text-xs block text-gray-500 font-normal">NEW ENERGY</span></div>
+        <div className="text-green-600 font-bold text-2xl">Ev® <span className="text-xs block text-gray-500 font-normal">NEW ENERGY</span></div>
         <nav className="hidden md:flex space-x-6 text-sm font-medium">
           <a href="#">Home</a>
           <a href="#">News</a>
@@ -203,28 +203,28 @@ const ContactPage = () => {
         <div className="grid md:grid-cols-4 gap-8 mt-16 pb-16 border-b border-gray-100">
           <div>
             <h4 className="font-bold mb-4">Email</h4>
-            <p className="text-xs text-gray-600">wolunhw@wolungroup.com</p>
+            <p className="text-xs text-gray-600">evfast2024@gmail.com</p>
             <h4 className="font-bold mt-8 mb-4">Whatsapp</h4>
             <p className="text-xs text-gray-600 space-y-1">
-              +86 13880654253<br />+86 18381320802<br />+86 13684301455
+              +977 9843176778<br />+977 9851315997
             </p>
           </div>
           <div>
             <h4 className="font-bold mb-4">Mobile Phone</h4>
             <p className="text-xs text-gray-600 space-y-1">
-              +86 13880654253<br />+86 18381320802<br />+86 13684301455
+              +977 9843176778 <br />+977 985115997
             </p>
-            <h4 className="font-bold mt-8 mb-4">Office Fax</h4>
-            <p className="text-xs text-gray-600">+86-28 68981093</p>
+            {/* <h4 className="font-bold mt-8 mb-4">Office Fax</h4>
+            <p className="text-xs text-gray-600">+86-28 68981093</p> */}
           </div>
           <div>
             <h4 className="font-bold mb-4">Office Tel</h4>
-            <p className="text-xs text-gray-600">+86 400 604 1668</p>
+            <p className="text-xs text-gray-600">+977 1-5909095</p>
           </div>
           <div>
             <h4 className="font-bold mb-4">Location Address</h4>
             <p className="text-xs text-gray-600 leading-relaxed">
-              No. 108, Tianyuan Street, Xinmin Town, Da'an District, Zigong City, Sichuan Province, China
+                Bijuli bazar Town, Kathmandu District, kathmandu City, Bagmati Province, Nepal
             </p>
           </div>
         </div>
