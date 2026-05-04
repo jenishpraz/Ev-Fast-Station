@@ -85,7 +85,7 @@ export default function Footer() {
               <li className="flex gap-3 text-sm text-white/50">
                 <MapPin size={16} className="shrink-0 text-[var(--color-accent)] mt-0.5" />
                 <span>
-                  No. 108, Bijuli bazar, Anamnagar, Kathmandu, Nepal
+                   Bijuli bazar, Anamnagar, Kathmandu, Nepal
                 </span>
               </li>
 
@@ -104,7 +104,7 @@ export default function Footer() {
               </li>
 
               <li>
-                <a href="mailto:info@evfastcharging.com" className="flex items-center gap-3 text-sm text-white/50 hover:text-[var(--color-accent)] transition-colors">
+                <a href="mailto:evfast2024@gmail.com" className="flex items-center gap-3 text-sm text-white/50 hover:text-[var(--color-accent)] transition-colors">
                   <Mail size={16} className="text-[var(--color-accent)]" />
                   info@evfastcharging.com
                 </a>
