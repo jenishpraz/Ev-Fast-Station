@@ -1,0 +1,170 @@
+{
+  "pages": {
+    "/not-found": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-ce6aa41c4752d337.js",
+      "static/chunks/23-0780f9629ca3667e.js",
+      "static/chunks/main-app-23a8e840ce6c18cd.js",
+      "static/chunks/231-abb4744825628d9a.js",
+      "static/chunks/app/not-found-a301fefd27d22b92.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-ce6aa41c4752d337.js",
+      "static/chunks/23-0780f9629ca3667e.js",
+      "static/chunks/main-app-23a8e840ce6c18cd.js",
+      "static/chunks/app/_not-found/page-d2efeaaa97dd42cc.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-ce6aa41c4752d337.js",
+      "static/chunks/23-0780f9629ca3667e.js",
+      "static/chunks/main-app-23a8e840ce6c18cd.js",
+      "static/css/67523bf8721f53f8.css",
+      "static/chunks/231-abb4744825628d9a.js",
+      "static/chunks/173-e9c1327b330c8e77.js",
+      "static/chunks/app/layout-817ce7964d1ba975.js"
+    ],
+    "/about-us/company-introduction/page": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-ce6aa41c4752d337.js",
+      "static/chunks/23-0780f9629ca3667e.js",
+      "static/chunks/main-app-23a8e840ce6c18cd.js",
+      "static/chunks/173-e9c1327b330c8e77.js",
+      "static/chunks/app/about-us/company-introduction/page-ae7e00c3f4244155.js"
+    ],
+    "/about-us/page": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-ce6aa41c4752d337.js",
+      "static/chunks/23-0780f9629ca3667e.js",
+      "static/chunks/main-app-23a8e840ce6c18cd.js",
+      "static/chunks/231-abb4744825628d9a.js",
+      "static/chunks/173-e9c1327b330c8e77.js",
+      "static/chunks/app/about-us/page-f4ad811b0acf693c.js"
+    ],
+    "/about-us/qc-system/page": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-ce6aa41c4752d337.js",
+      "static/chunks/23-0780f9629ca3667e.js",
+      "static/chunks/main-app-23a8e840ce6c18cd.js",
+      "static/chunks/173-e9c1327b330c8e77.js",
+      "static/chunks/app/about-us/qc-system/page-f07a4499635ec4b2.js"
+    ],
+    "/contact-us/page": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-ce6aa41c4752d337.js",
+      "static/chunks/23-0780f9629ca3667e.js",
+      "static/chunks/main-app-23a8e840ce6c18cd.js",
+      "static/chunks/173-e9c1327b330c8e77.js",
+      "static/chunks/app/contact-us/page-27ed9fdd6a62f39f.js"
+    ],
+    "/news/Ev-group-news/page": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-ce6aa41c4752d337.js",
+      "static/chunks/23-0780f9629ca3667e.js",
+      "static/chunks/main-app-23a8e840ce6c18cd.js",
+      "static/chunks/231-abb4744825628d9a.js",
+      "static/chunks/173-e9c1327b330c8e77.js",
+      "static/chunks/app/news/Ev-group-news/page-89e53f08166481b7.js"
+    ],
+    "/news/industry-information/page": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-ce6aa41c4752d337.js",
+      "static/chunks/23-0780f9629ca3667e.js",
+      "static/chunks/main-app-23a8e840ce6c18cd.js",
+      "static/chunks/231-abb4744825628d9a.js",
+      "static/chunks/173-e9c1327b330c8e77.js",
+      "static/chunks/app/news/industry-information/page-57d7f8a344bf9c94.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-ce6aa41c4752d337.js",
+      "static/chunks/23-0780f9629ca3667e.js",
+      "static/chunks/main-app-23a8e840ce6c18cd.js",
+      "static/chunks/231-abb4744825628d9a.js",
+      "static/chunks/173-e9c1327b330c8e77.js",
+      "static/chunks/app/page-74c12c72deba2f61.js"
+    ],
+    "/privacy/page": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-ce6aa41c4752d337.js",
+      "static/chunks/23-0780f9629ca3667e.js",
+      "static/chunks/main-app-23a8e840ce6c18cd.js",
+      "static/chunks/app/privacy/page-24531731c4498977.js"
+    ],
+    "/news/page": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-ce6aa41c4752d337.js",
+      "static/chunks/23-0780f9629ca3667e.js",
+      "static/chunks/main-app-23a8e840ce6c18cd.js",
+      "static/chunks/231-abb4744825628d9a.js",
+      "static/chunks/173-e9c1327b330c8e77.js",
+      "static/chunks/app/news/page-fb86b956023e2e3c.js"
+    ],
+    "/products/ev-charging-stations/page": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-ce6aa41c4752d337.js",
+      "static/chunks/23-0780f9629ca3667e.js",
+      "static/chunks/main-app-23a8e840ce6c18cd.js",
+      "static/chunks/231-abb4744825628d9a.js",
+      "static/chunks/app/products/ev-charging-stations/page-b81980acd7b04696.js"
+    ],
+    "/products/page": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-ce6aa41c4752d337.js",
+      "static/chunks/23-0780f9629ca3667e.js",
+      "static/chunks/main-app-23a8e840ce6c18cd.js",
+      "static/chunks/231-abb4744825628d9a.js",
+      "static/chunks/app/products/page-578436761afdce25.js"
+    ],
+    "/products/photovoltaic-energy-storage/page": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-ce6aa41c4752d337.js",
+      "static/chunks/23-0780f9629ca3667e.js",
+      "static/chunks/main-app-23a8e840ce6c18cd.js",
+      "static/chunks/231-abb4744825628d9a.js",
+      "static/chunks/app/products/photovoltaic-energy-storage/page-392f1e6a1a76c76c.js"
+    ],
+    "/products/power-transformers/page": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-ce6aa41c4752d337.js",
+      "static/chunks/23-0780f9629ca3667e.js",
+      "static/chunks/main-app-23a8e840ce6c18cd.js",
+      "static/chunks/231-abb4744825628d9a.js",
+      "static/chunks/app/products/power-transformers/page-aa91d9322d28e172.js"
+    ],
+    "/products/switchgears/page": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-ce6aa41c4752d337.js",
+      "static/chunks/23-0780f9629ca3667e.js",
+      "static/chunks/main-app-23a8e840ce6c18cd.js",
+      "static/chunks/231-abb4744825628d9a.js",
+      "static/chunks/app/products/switchgears/page-37c4c87cd6a11ba7.js"
+    ],
+    "/services/page": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-ce6aa41c4752d337.js",
+      "static/chunks/23-0780f9629ca3667e.js",
+      "static/chunks/main-app-23a8e840ce6c18cd.js",
+      "static/chunks/231-abb4744825628d9a.js",
+      "static/chunks/173-e9c1327b330c8e77.js",
+      "static/chunks/app/services/page-bb676950ede2bf9f.js"
+    ],
+    "/social-media/page": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-ce6aa41c4752d337.js",
+      "static/chunks/23-0780f9629ca3667e.js",
+      "static/chunks/main-app-23a8e840ce6c18cd.js",
+      "static/chunks/app/social-media/page-752dd2be46287989.js"
+    ],
+    "/solutions/page": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-ce6aa41c4752d337.js",
+      "static/chunks/23-0780f9629ca3667e.js",
+      "static/chunks/main-app-23a8e840ce6c18cd.js",
+      "static/chunks/231-abb4744825628d9a.js",
+      "static/chunks/173-e9c1327b330c8e77.js",
+      "static/chunks/app/solutions/page-7df68a6b28b4a42d.js"
+    ]
+  }
+}
