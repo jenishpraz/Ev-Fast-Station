@@ -54,7 +54,40 @@ const stats = [
 //     icon: '📱',
 //   },
 // ];
+// ✅ FIX: Moved CDN URLs here so allProducts can use them
+const BASE_CDN = 'https://shopcdnpro.grainajz.com/category/61476/2176/';
 
+const allProducts = [
+  {
+    id: 'pv-1',
+    title: 'WL-E-CORE WOLUN Megawatt Energy Storage System',
+    image: `${BASE_CDN}e971c6ea6fb6db75445bc75a73fec63e/1.png`,
+    link: '/products',
+    tag: 'Photovoltaic Energy Storage Systems',
+  },
+  {
+    id: 'pv-2',
+    title: 'WL-E-CORE Export-grade Outdoor Cabinet-type Commercial Energy Storage System',
+    image: `${BASE_CDN}e34477a61e37b1aac112a1bb65bc4d3d/2.png`,
+    link: '/products',
+    tag: 'Photovoltaic Energy Storage Systems',
+  },
+  {
+    id: 'pv-3',
+    title: '15KWh / 30KWh Floor-mounted Mobile Cabinet Energy Storage System',
+    image: `${BASE_CDN}6f253a0782b7d8f07874bfe3ecdbad1f/3.png`,
+    link: '/products',
+    tag: 'Photovoltaic Energy Storage Systems',
+  },
+  {
+    id: 'pv-4',
+    title: 'Wall-mounted Energy Storage System',
+    image: `${BASE_CDN}f20c05b760ade9f91c66c9eb21b32719/4.png`,
+    link: '/products',
+    tag: 'Photovoltaic Energy Storage Systems',
+  },
+ 
+];
 const services = [
   {
     title: 'Residential Fast Charging',
@@ -418,66 +451,68 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* ═══════════════════════════════════════
-          Services - ENHANCED
+ {/* ═══════════════════════════════════════
+          Products
       ═══════════════════════════════════════ */}
-      <section className="py-12 bg-gradient-to-b from-slate-50 to-white">
+    {/* ═══════════════════════════════════════
+          PRODUCTS - FIXED
+      ═══════════════════════════════════════ */}
+      <section className="py-12 bg-gradient-to-b from-white to-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-16 gap-8">
             <div>
-              <div className="inline-block text-xs font-bold tracking-widest uppercase text-emerald-600 mb-3 px-3 py-1 bg-emerald-50 rounded-full">
-                Our Services
+              <div className="inline-block text-xs font-bold tracking-widest uppercase text-green-600 mb-3 px-3 py-1 bg-green-50 rounded-full">
+                Our Products
               </div>
-              <div className="accent-bar" />
-              <h2 className="text-5xl font-bold text-gray-900 mt-6">
-                EV Charging Services
+              <h2 className="text-5xl font-bold text-gray-900 mt-2">
+                Smart EV Products
               </h2>
               <p className="text-lg text-gray-600 mt-4 max-w-lg">
-                From residential chargers to ultra-fast mega stations, our intelligent solutions deliver what the world needs.
+                Explore our high-performance EV chargers and smart energy solutions built for the future.
               </p>
             </div>
-            <Link href="/services" className="inline-flex items-center gap-2 px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl transition-all group whitespace-nowrap">
-              ALL SERVICES <ArrowRight className="group-hover:translate-x-1 transition-transform" size={18} />
+            <Link
+              href="/products"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-green-600 hover:bg-green-700 text-white font-bold rounded-xl transition-all group whitespace-nowrap"
+            >
+              ALL PRODUCTS
+              <ArrowRight className="group-hover:translate-x-1 transition-transform" size={18} />
             </Link>
           </div>
 
+          {/* ✅ FIX: Added fixed height container (h-48) around img so it doesn't collapse */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {services.map((services) => (
-              <Link key={services.title} href={services.href} className="group">
-                <div className="h-full rounded-2xl overflow-hidden bg-white border border-gray-200 hover:border-emerald-400 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col">
-                  <div className={`relative h-48 bg-gradient-to-br ${services.color} overflow-hidden`}>
-                    <Image
-                      src={services.image}
-                      alt={services.title}
-                      fill
-                      className="object-cover group-hover:scale-110 transition-transform duration-300"
+            {allProducts.slice(0, 8).map((product) => (
+              <Link key={product.id} href={product.link} className="group">
+                <div className="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col">
+
+                  {/* ✅ FIX: Explicit height wrapper so image is visible */}
+                  <div className="relative h-48 w-full overflow-hidden bg-slate-100">
+                    <img
+                      src={product.image}
+                      alt={product.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition duration-300"
                       onError={(e) => {
-                        e.currentTarget.style.display = 'none';
+                        (e.target as HTMLImageElement).src =
+                          'https://via.placeholder.com/400x300?text=Image+Not+Found';
                       }}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
-                    <div className="absolute top-4 right-4 text-4xl">{services.icon}</div>
                   </div>
-                  <div className="p-6 flex flex-col flex-1">
-                    <span className="inline-flex items-center gap-2 text-xs font-bold text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full w-fit mb-4">
-                      <Bolt size={14} /> {services.tag}
-                    </span>
-                    <h3 className="font-bold text-gray-900 text-sm leading-tight mb-3 group-hover:text-emerald-600 transition-colors">
-                      {services.title}
+
+                  <div className="p-5 flex flex-col flex-1">
+                    <p className="text-xs text-green-600 font-semibold mb-1">{product.tag}</p>
+                    <h3 className="font-bold text-sm text-slate-800 line-clamp-2 group-hover:text-green-600 transition">
+                      {product.title}
                     </h3>
-                    <p className="text-gray-600 text-xs leading-relaxed flex-1 mb-4">{services.desc}</p>
-                    <div className="flex items-center gap-2 text-blue-600 font-bold text-sm group-hover:gap-3 transition-all">
-                      Learn More <ChevronRight size={14} />
-                    </div>
                   </div>
+
                 </div>
               </Link>
             ))}
           </div>
         </div>
       </section>
-
       {/* ═══════════════════════════════════════
           ADVANTAGES - REDESIGNED
       ═══════════════════════════════════════ */}
