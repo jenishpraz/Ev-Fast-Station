@@ -108,13 +108,6 @@
       "static/chunks/main-app-23a8e840ce6c18cd.js",
       "static/chunks/app/products/ev-charging-stations/page-faafe0b2cb5cfa2a.js"
     ],
-    "/products/photovoltaic-energy-storage/page": [
-      "static/chunks/webpack-1796d5ecd61cbd74.js",
-      "static/chunks/fd9d1056-ce6aa41c4752d337.js",
-      "static/chunks/23-0780f9629ca3667e.js",
-      "static/chunks/main-app-23a8e840ce6c18cd.js",
-      "static/chunks/app/products/photovoltaic-energy-storage/page-8c21724268f93f69.js"
-    ],
     "/products/page": [
       "static/chunks/webpack-1796d5ecd61cbd74.js",
       "static/chunks/fd9d1056-ce6aa41c4752d337.js",
@@ -123,6 +116,13 @@
       "static/chunks/231-abb4744825628d9a.js",
       "static/chunks/173-e9c1327b330c8e77.js",
       "static/chunks/app/products/page-b5892bc0898ac056.js"
+    ],
+    "/products/photovoltaic-energy-storage/page": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-ce6aa41c4752d337.js",
+      "static/chunks/23-0780f9629ca3667e.js",
+      "static/chunks/main-app-23a8e840ce6c18cd.js",
+      "static/chunks/app/products/photovoltaic-energy-storage/page-8c21724268f93f69.js"
     ],
     "/products/power-transformers/page": [
       "static/chunks/webpack-1796d5ecd61cbd74.js",

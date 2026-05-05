@@ -6,10 +6,12 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'shopcdnpro.grainajz.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+      },
     ],
   },
 };
 
-export const images = {
-  domains: ["images.unsplash.com"],
-};
+export default nextConfig;
