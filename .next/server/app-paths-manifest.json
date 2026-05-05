@@ -1,4 +1,20 @@
 {
+  "/_not-found/page": "app/_not-found/page.js",
+  "/about-us/company-introduction/page": "app/about-us/company-introduction/page.js",
+  "/about-us/page": "app/about-us/page.js",
+  "/about-us/qc-system/page": "app/about-us/qc-system/page.js",
+  "/contact-us/page": "app/contact-us/page.js",
+  "/news/Ev-group-news/page": "app/news/Ev-group-news/page.js",
+  "/news/industry-information/page": "app/news/industry-information/page.js",
+  "/news/page": "app/news/page.js",
   "/page": "app/page.js",
-  "/products/page": "app/products/page.js"
+  "/privacy/page": "app/privacy/page.js",
+  "/products/ev-charging-stations/page": "app/products/ev-charging-stations/page.js",
+  "/products/photovoltaic-energy-storage/page": "app/products/photovoltaic-energy-storage/page.js",
+  "/products/page": "app/products/page.js",
+  "/products/power-transformers/page": "app/products/power-transformers/page.js",
+  "/products/switchgears/page": "app/products/switchgears/page.js",
+  "/services/page": "app/services/page.js",
+  "/social-media/page": "app/social-media/page.js",
+  "/solutions/page": "app/solutions/page.js"
 }
