@@ -23,7 +23,7 @@ const allProducts = [
   {
     id: 'pv-1',
     title: 'WL-E-CORE WOLUN Megawatt Energy Storage System',
-          image: `/images/products/p126.jpg`,
+          image: `/images/products/p126.jpeg`,
     link: '/products',
     tag: 'Photovoltaic Energy Storage Systems',
   },
