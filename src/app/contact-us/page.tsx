@@ -1,7 +1,8 @@
+'use client';
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Phone, Mail, MapPin, Clock, Facebook, Youtube, ChevronUp } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, ChevronUp } from 'lucide-react';
 
 const ContactPage = () => {
   return (
@@ -11,13 +12,13 @@ const ContactPage = () => {
       <header className="border-b border-gray-100 py-4 px-8 flex justify-between items-center">
         <div className="text-green-600 font-bold text-2xl">Ev® <span className="text-xs block text-gray-500 font-normal">NEW ENERGY</span></div>
         <nav className="hidden md:flex space-x-6 text-sm font-medium">
-          <a href="#">Home</a>
-          <a href="#">News</a>
-          <a href="#">Products</a>
-          <a href="#">Solutions</a>
-          <a href="#">Social Media</a>
-          <a href="#">About us</a>
-          <a href="#" className="text-green-600 border-b-2 border-green-600">Contact us</a>
+          <Link href="/">Home</Link>
+          <Link href="/news">News</Link>
+          <Link href="/products">Products</Link>
+          <Link href="/solutions">Solutions</Link>
+          <Link href="/social-media">Social Media</Link>
+          <Link href="/about-us">About us</Link>
+          <Link href="/contact-us" className="text-green-600 border-b-2 border-green-600">Contact us</Link>
         </nav>
         <div className="flex items-center space-x-2 border rounded px-2 py-1 text-xs">
           <span className="w-4 h-3 bg-red-600 block"></span>
@@ -85,6 +86,33 @@ const ContactPage = () => {
               <div>
                 <h3 className="font-bold text-green-700 text-lg">Opening Time:</h3>
                 <p className="text-sm mt-1">10:00 AM - 5:00 PM (Sunday-Friday)</p>
+              </div>
+            </div>
+
+            {/* Facebook Link */}
+            <div className="flex items-start space-x-4">
+              <div className="bg-green-50 p-3 rounded-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width={24}
+                  height={24}
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="text-green-600 w-6 h-6"
+                >
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                </svg>
+              </div>
+              <div>
+                <h3 className="font-bold text-green-700 text-lg">Facebook:</h3>
+                <a
+                  href="https://www.facebook.com/profile.php?id=61578002056697"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm mt-1 text-blue-600 hover:underline"
+                >
+                  EV Fast Charging
+                </a>
               </div>
             </div>
           </div>
@@ -205,17 +233,15 @@ const ContactPage = () => {
             <h4 className="font-bold mb-4">Email</h4>
             <p className="text-xs text-gray-600">evfast2024@gmail.com</p>
             <h4 className="font-bold mt-8 mb-4">Whatsapp</h4>
-            <p className="text-xs text-gray-600 space-y-1">
+            <p className="text-xs text-gray-600">
               +977 9843176778<br />+977 9851315997
             </p>
           </div>
           <div>
             <h4 className="font-bold mb-4">Mobile Phone</h4>
-            <p className="text-xs text-gray-600 space-y-1">
+            <p className="text-xs text-gray-600">
               +977 9843176778 <br />+977 985115997
             </p>
-            {/* <h4 className="font-bold mt-8 mb-4">Office Fax</h4>
-            <p className="text-xs text-gray-600">+86-28 68981093</p> */}
           </div>
           <div>
             <h4 className="font-bold mb-4">Office Tel</h4>
@@ -224,7 +250,7 @@ const ContactPage = () => {
           <div>
             <h4 className="font-bold mb-4">Location Address</h4>
             <p className="text-xs text-gray-600 leading-relaxed">
-                Bijuli bazar Town, Kathmandu District, kathmandu City, Bagmati Province, Nepal
+              Bijuli bazar Town, Kathmandu District, Kathmandu City, Bagmati Province, Nepal
             </p>
           </div>
         </div>
@@ -244,10 +270,30 @@ const ContactPage = () => {
 
       {/* Floating Action Buttons */}
       <div className="fixed right-4 bottom-20 flex flex-col space-y-2">
-        <div className="bg-green-600 p-2 text-white rounded"><Facebook size={20} /></div>
-        <div className="bg-green-600 p-2 text-white rounded"><Youtube size={20} /></div>
-        <div className="bg-green-600 p-2 text-white rounded"><ChevronUp size={20} /></div>
+        <a
+          href="https://www.facebook.com/profile.php?id=61578002056697"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-green-600 p-2 text-white rounded"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width={20}
+            height={20}
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+          </svg>
+        </a>
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          className="bg-green-600 p-2 text-white rounded"
+        >
+          <ChevronUp size={20} />
+        </button>
       </div>
+
     </div>
   );
 };
