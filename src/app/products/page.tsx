@@ -979,7 +979,7 @@ const getPagination = (current: number, total: number) => {
         {
           id: 'pv-1',
           title: 'WL-E-CORE ev Megawatt Energy Storage System',
-          image: `/images/products/p126.jpg`,
+          image: `/images/products/p126.jpeg`,
           link: '/wl-e-core-wolun-megawatt-energy-storage-system',
           category: 'Photovoltaic Energy Storage Systems',
         },
