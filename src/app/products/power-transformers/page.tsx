@@ -1,124 +1,229 @@
-import Link from 'next/link';
-import { Settings, ArrowRight, CheckCircle, Shield } from 'lucide-react';
+'use client';
 
-const products = [
-  {
-    title: 'Oil-Immersed Power Transformers',
-    tag: 'Heavy Duty',
-    range: '50kVA – 63MVA',
-    color: 'from-violet-700 to-purple-900',
-    specs: [
-      'IEC / GB / ANSI standards',
-      'ON/OFF load tap changer',
-      'ONAN / ONAF cooling',
-      'Oil temperature monitoring',
-      'Low loss amorphous core option',
-    ],
-    desc: 'High-reliability oil-immersed transformers for utility substations, industrial plants, and large commercial installations. Designed for long operational lifetimes with minimal maintenance.',
-  },
-  {
-    title: 'Dry-Type Power Transformers',
-    tag: 'Indoor Safe',
-    range: '30kVA – 20MVA',
-    color: 'from-purple-600 to-indigo-900',
-    specs: [
-      'Class F / H insulation',
-      'IP00 to IP54 enclosures',
-      'Self-extinguishing resin',
-      'Low partial discharge',
-      'No fire / explosion risk',
-    ],
-    desc: 'Epoxy resin cast dry-type transformers ideal for indoor installations in hospitals, commercial buildings, data centers, and metro systems where fire safety is critical.',
-  },
-  {
-    title: 'Special Purpose Transformers',
-    tag: 'Custom',
-    range: 'As Required',
-    color: 'from-slate-600 to-slate-900',
-    specs: [
-      'EV charging station supply',
-      'Rectifier / furnace types',
-      'Scott connection (3-phase to 2-phase)',
-      'Autotransformers',
-      'Custom specification design',
-    ],
-    desc: 'Custom-engineered transformers for specialized applications including EV charging stations, electrolysis systems, and other non-standard industrial processes.',
-  },
-];
+import React, { useState } from 'react';
+import { ChevronRight, Zap } from 'lucide-react';
+import Link from 'next/link';
+
+interface Product {
+  id: string;
+  title: string;
+  image: string;
+  link: string;
+  category: string;
+  price?: string;
+  specs?: string[];
+}
 
 export default function PowerTransformersPage() {
+  const [sortBy, setSortBy] = useState<string>('featured');
+
+  const products: Product[] = [
+    {
+      id: 'pt-1',
+      title: 'Distribution Transformer 100kVA',
+      image: 'https://shopcdnpro.grainajz.com/category/61476/2176/598a794ace525cb99afd26d0224f6607/Without%20Screen%20DC%20Electric%20charging%20Station%20120kW-1.jpg',
+      link: '/products/power-transformers/pt-1',
+      category: 'Distribution',
+      price: '$5,500 - $7,200',
+      specs: ['100kVA Rating', 'Oil Cooled', 'IP23 Protection']
+    },
+    {
+      id: 'pt-2',
+      title: 'Power Transformer 250kVA Oil Cooled',
+      image: 'https://shopcdnpro.grainajz.com/category/61476/2176/2aab473387c478e6a9bf2c5b0cc77f1f/Without%20Screen%20DC%20Electric%20charging%20Station%20120kW-2.jpg',
+      link: '/products/power-transformers/pt-2',
+      category: 'Power',
+      price: '$12,000 - $15,500',
+      specs: ['250kVA Rating', 'Oil Cooled', 'Thermometer']
+    },
+    {
+      id: 'pt-3',
+      title: 'Step-up Transformer 500kVA',
+      image: 'https://shopcdnpro.grainajz.com/category/61476/2176/003f98330821cc9d192b600ef00363fd/Without%20Screen%20DC%20Electric%20charging%20Station%20120kW-3.jpg',
+      link: '/products/power-transformers/pt-3',
+      category: 'Power',
+      price: '$22,000 - $28,000',
+      specs: ['500kVA Rating', 'Step-up Design', 'Industrial Grade']
+    },
+    {
+      id: 'pt-4',
+      title: 'Dry Type Transformer 1000kVA',
+      image: 'https://shopcdnpro.grainajz.com/category/61476/2176/9bccf8d814e81cf9924aa9e66aeca5b2/DC%20Electric%20Vehicle%20Charging%2060kW%20to%20400kW.jpg',
+      link: '/products/power-transformers/pt-4',
+      category: 'Dry Type',
+      price: '$35,000 - $45,000',
+      specs: ['1000kVA Rating', 'Dry Type', 'Fire Safe']
+    },
+    {
+      id: 'pt-5',
+      title: 'Pad-Mounted Transformer 500kVA',
+      image: 'https://shopcdnpro.grainajz.com/category/61476/2176/4a66de96b01c82b2e6c32b5141c198da/2.jpg',
+      link: '/products/power-transformers/pt-5',
+      category: 'Distribution',
+      price: '$18,000 - $22,500',
+      specs: ['500kVA Rating', 'Pad-Mounted', 'Weather Resistant']
+    },
+    {
+      id: 'pt-6',
+      title: 'Three Phase Transformer 1500kVA',
+      image: 'https://shopcdnpro.grainajz.com/category/61476/2176/a5b4a475f45ec04b799cf9da275b53a3/DC%20Electric%20Vehicle%20Charging%2060kW%20to%20400kW-3..jpg',
+      link: '/products/power-transformers/pt-6',
+      category: 'Three Phase',
+      price: '$48,000 - $62,000',
+      specs: ['1500kVA Rating', 'Three Phase', 'Oil Cooled']
+    }
+  ];
+
+  const sortedProducts = [...products].sort((a, b) => {
+    if (sortBy === 'price-low') {
+      return (parseInt(a.price?.split('-')[0] || '0') || 0) - (parseInt(b.price?.split('-')[0] || '0') || 0);
+    }
+    if (sortBy === 'price-high') {
+      return (parseInt(b.price?.split('-')[1] || '0') || 0) - (parseInt(a.price?.split('-')[1] || '0') || 0);
+    }
+    return 0;
+  });
+
   return (
-    <>
-      <section className="hero-bg pt-32 pb-16 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10"
-          style={{ backgroundImage: 'radial-gradient(circle at 70% 40%, #7c3aed 0%, transparent 60%)' }} />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <p className="section-label mb-3">Products / Power Transformers</p>
-          <h1 className="text-white text-5xl font-bold mb-4" style={{ fontFamily: 'Syne, sans-serif' }}>
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-100">
+      {/* Header */}
+      <div className="relative overflow-hidden pt-16 pb-12 bg-gradient-to-r from-amber-600 to-amber-700">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0 bg-grid-pattern" />
+        </div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Breadcrumb */}
+          <div className="flex items-center gap-2 text-sm text-amber-100 mb-8">
+            <Link href="/" className="hover:text-white transition-colors">Home</Link>
+            <ChevronRight className="w-4 h-4" />
+            <Link href="/products" className="hover:text-white transition-colors">Products</Link>
+            <ChevronRight className="w-4 h-4" />
+            <span className="text-white font-medium">Power Transformers</span>
+          </div>
+
+          {/* Title */}
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Power Transformers
           </h1>
-          <p className="text-white/60 max-w-xl text-lg">
-            High-reliability oil-immersed and dry-type transformers for industrial, utility, and commercial applications.
+          <p className="text-lg text-amber-100 max-w-2xl">
+            Industrial-grade power transformers for distribution, transmission, and specialized applications.
           </p>
         </div>
-        <div className="absolute bottom-0 left-0 right-0">
-          <svg viewBox="0 0 1440 40" fill="white" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 40H1440V0C1200 30 960 0 720 15C480 30 240 0 0 15V40Z" />
-          </svg>
-        </div>
-      </section>
+      </div>
 
-      <section className="py-10 bg-violet-50 border-b border-violet-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            {[
-              { value: 'IEC/GB', label: 'Standards Certified' },
-              { value: '99.5%+', label: 'Typical Efficiency' },
-              { value: '30yr', label: 'Design Lifetime' },
-              { value: 'IP54', label: 'Max Protection Class' },
-            ].map(({ value, label }) => (
-              <div key={label}>
-                <p className="text-2xl font-bold text-violet-700" style={{ fontFamily: 'Syne, sans-serif' }}>{value}</p>
-                <p className="text-sm text-gray-500 mt-1">{label}</p>
-              </div>
-            ))}
+      {/* Content */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        {/* Filters and Sort */}
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-8">
+          <div>
+            <h2 className="text-2xl font-bold text-slate-900 mb-2">
+              Power Transformer Solutions
+            </h2>
+            <p className="text-slate-600">
+              {sortedProducts.length} products available
+            </p>
+          </div>
+          
+          <div className="w-full sm:w-auto">
+            <label className="block text-sm font-medium text-slate-700 mb-2">
+              Sort by:
+            </label>
+            <select
+              value={sortBy}
+              onChange={(e) => setSortBy(e.target.value)}
+              className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent outline-none transition-all"
+            >
+              <option value="featured">Featured</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="newest">Newest</option>
+            </select>
           </div>
         </div>
-      </section>
 
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-8">
-          {products.map(({ title, tag, range, color, specs, desc }) => (
-            <div key={title} className="rounded-2xl border border-gray-100 overflow-hidden shadow-sm card-hover flex flex-col">
-              <div className={`bg-gradient-to-br ${color} p-8 flex items-center gap-4`}>
-                <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center shrink-0">
-                  <Settings size={24} className="text-white" />
-                </div>
-                <div>
-                  <span className="text-xs font-bold text-white/60 bg-white/10 px-2 py-0.5 rounded-full">{tag}</span>
-                  <p className="text-white/70 text-xs mt-1">{range}</p>
+        {/* Products Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          {sortedProducts.map((product, index) => (
+            <Link
+              key={product.id}
+              href={product.link}
+              className="group bg-white rounded-lg overflow-hidden border border-slate-200 hover:border-amber-400 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+              style={{
+                animationDelay: `${index * 50}ms`,
+                animation: 'fadeInUp 0.6s ease-out forwards'
+              }}
+            >
+              {/* Product Image */}
+              <div className="relative h-72 bg-gradient-to-br from-slate-100 to-slate-50 overflow-hidden">
+                <img
+                  src={product.image}
+                  alt={product.title}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute top-4 right-4 bg-amber-600 text-white px-3 py-1 rounded-full text-xs font-semibold flex items-center gap-1">
+                  <Zap className="w-3 h-3" />
+                  {product.category}
                 </div>
               </div>
-              <div className="p-7 flex flex-col flex-1">
-                <h3 className="font-bold text-gray-900 mb-3" style={{ fontFamily: 'Syne, sans-serif' }}>{title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed mb-5">{desc}</p>
-                <ul className="space-y-2 mb-6 flex-1">
-                  {specs.map(s => (
-                    <li key={s} className="flex items-center gap-2 text-sm text-gray-700">
-                      <CheckCircle size={13} className="text-[var(--color-accent)] shrink-0" />
-                      {s}
-                    </li>
-                  ))}
-                </ul>
-                <Link href="/contact-us"
-                  className="inline-flex items-center gap-2 text-[var(--color-primary)] font-semibold hover:gap-3 transition-all text-sm mt-auto">
-                  Request Quote <ArrowRight size={14} />
-                </Link>
+
+              {/* Product Info */}
+              <div className="p-6">
+                <h3 className="text-lg font-bold text-slate-900 line-clamp-2 group-hover:text-amber-600 transition-colors mb-3">
+                  {product.title}
+                </h3>
+
+                {/* Specs */}
+                {product.specs && (
+                  <div className="mb-4 space-y-1">
+                    {product.specs.slice(0, 2).map((spec, idx) => (
+                      <p key={idx} className="text-sm text-slate-600">
+                        ✓ {spec}
+                      </p>
+                    ))}
+                  </div>
+                )}
+
+                {/* Price */}
+                {product.price && (
+                  <p className="text-xl font-bold text-amber-600 mb-4">
+                    {product.price}
+                  </p>
+                )}
+
+                {/* Action */}
+                <div className="flex items-center text-amber-600 font-medium text-sm group-hover:gap-2 transition-all duration-300">
+                  <span>View Details</span>
+                  <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
-      </section>
-    </>
+
+      
+      </div>
+
+      <style>{`
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        .bg-grid-pattern {
+          background-image: 
+            linear-gradient(to right, rgba(255,255,255,.1) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(255,255,255,.1) 1px, transparent 1px);
+          background-size: 50px 50px;
+        }
+      `}</style>
+    </div>
   );
 }

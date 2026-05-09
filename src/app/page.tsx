@@ -16,44 +16,6 @@ const stats = [
   { value: '500+', label: 'Fast Charging Installations', icon: Building2 },
 ];
 
-// const products = [
-//   {
-//     title: 'Residential & Commercial Fast Charger 20kW–60kW',
-//     desc: 'OCPP1.6J compatible, RFID card support, IP54 rated DC charger for homes and businesses.',
-//     href: '/products/home-commercial-dc-charger',
-//     tag: 'DC Charger',
-//     image: '/images/station-1.png',
-//     color: 'from-blue-600 to-blue-800',
-//     icon: '⚡',
-//   },
-//   {
-//     title: 'Ultra-Fast DC Charger 60kW–360kW',
-//     desc: 'High-power rapid charging with integrated display, designed for commercial networks.',
-//     href: '/products/ultra-fast-360kw',
-//     tag: 'Ultra Fast',
-//     image: '/images/station-2.png',
-//     color: 'from-indigo-600 to-blue-700',
-//     icon: '🔋',
-//   },
-//   {
-//     title: 'Mega Fast Charger 60kW–400kW',
-//     desc: 'Next-generation ultra-high power DC charging for heavy-duty fleet operations.',
-//     href: '/products/mega-fast-400kw',
-//     tag: 'Mega Fast',
-//     image: '/images/station-3.png',
-//     color: 'from-blue-700 to-cyan-700',
-//     icon: '⚙️',
-//   },
-//   {
-//     title: 'Smart AC Charger 3.5kW–22kW',
-//     desc: 'Intelligent AC charging with scheduling, multiple payment options, and IoT monitoring.',
-//     href: '/products/smart-ac-charger',
-//     tag: 'Smart AC',
-//     image: '/images/station-4.png',
-//     color: 'from-cyan-600 to-teal-600',
-//     icon: '📱',
-//   },
-// ];
 // ✅ FIX: Moved CDN URLs here so allProducts can use them
 const BASE_CDN = 'https://shopcdnpro.grainajz.com/category/61476/2176/';
 
@@ -61,71 +23,72 @@ const allProducts = [
   {
     id: 'pv-1',
     title: 'WL-E-CORE WOLUN Megawatt Energy Storage System',
-    image: `${BASE_CDN}e971c6ea6fb6db75445bc75a73fec63e/1.png`,
+          image: `/images/products/p126.jpg`,
     link: '/products',
     tag: 'Photovoltaic Energy Storage Systems',
   },
   {
     id: 'pv-2',
     title: 'WL-E-CORE Export-grade Outdoor Cabinet-type Commercial Energy Storage System',
-    image: `${BASE_CDN}e34477a61e37b1aac112a1bb65bc4d3d/2.png`,
+          image: `/images/products/p127.jpg`,
     link: '/products',
     tag: 'Photovoltaic Energy Storage Systems',
   },
   {
     id: 'pv-3',
     title: '15KWh / 30KWh Floor-mounted Mobile Cabinet Energy Storage System',
-    image: `${BASE_CDN}6f253a0782b7d8f07874bfe3ecdbad1f/3.png`,
+          image: `/images/products/p128.jpg`,
     link: '/products',
     tag: 'Photovoltaic Energy Storage Systems',
   },
   {
     id: 'pv-4',
     title: 'Wall-mounted Energy Storage System',
-    image: `${BASE_CDN}f20c05b760ade9f91c66c9eb21b32719/4.png`,
+          image: `/images/products/p129.jpg`,
     link: '/products',
     tag: 'Photovoltaic Energy Storage Systems',
   },
  
 ];
-const services = [
-  {
-    title: 'Residential Fast Charging',
-    desc: 'Smart EV charging installation for homes with fast charging capability.',
-    href: '/services',
-    tag: 'Home Charging',
-    image: '/images/service1.png',
-    color: 'from-blue-600 to-cyan-600',
-    icon: '🏠',
-  },
-  {
-    title: 'Commercial Charging Network',
-    desc: 'High-capacity charging infrastructure for businesses and commercial hubs.',
-    href: '/services',
-    tag: 'Commercial',
-    image: '/images/service2.png',
-    color: 'from-indigo-600 to-blue-700',
-    icon: '🏢',
-  },
-  {
-    title: 'Ultra-Fast DC Charging',
-    desc: 'Next-gen ultra-fast charging (60kW–360kW) for highways and fleets.',
-    href: '/services',
-    tag: 'Ultra Fast',
-    image: '/images/service3.png',
-    color: 'from-blue-700 to-emerald-600',
-    icon: '⚡',
-  },
-  {
-    title: 'Solar Powered Charging',
-    desc: '100% renewable EV charging using solar + battery integration.',
-    href: '/services',
-    tag: 'Green Energy',
-    image: '/images/service6.png',
-    color: 'from-yellow-600 to-orange-600',
-    icon: '☀️',
-  },
-];
+
+// const services = [
+//   {
+//     title: 'Residential Fast Charging',
+//     desc: 'Smart EV charging installation for homes with fast charging capability.',
+//     href: '/services',
+//     tag: 'Home Charging',
+//     image: '/images/service1.png',
+//     color: 'from-blue-600 to-cyan-600',
+//     icon: '🏠',
+//   },
+//   {
+//     title: 'Commercial Charging Network',
+//     desc: 'High-capacity charging infrastructure for businesses and commercial hubs.',
+//     href: '/services',
+//     tag: 'Commercial',
+//     image: '/images/service2.png',
+//     color: 'from-indigo-600 to-blue-700',
+//     icon: '🏢',
+//   },
+//   {
+//     title: 'Ultra-Fast DC Charging',
+//     desc: 'Next-gen ultra-fast charging (60kW–360kW) for highways and fleets.',
+//     href: '/services',
+//     tag: 'Ultra Fast',
+//     image: '/images/service3.png',
+//     color: 'from-blue-700 to-emerald-600',
+//     icon: '⚡',
+//   },
+//   {
+//     title: 'Solar Powered Charging',
+//     desc: '100% renewable EV charging using solar + battery integration.',
+//     href: '/services',
+//     tag: 'Green Energy',
+//     image: '/images/service6.png',
+//     color: 'from-yellow-600 to-orange-600',
+//     icon: '☀️',
+//   },
+// ];
 
 const advantages = [
   {
@@ -184,15 +147,12 @@ const successCases = [
   },
 ];
 
-
-
 const heroSlides = [
-
-  { image: '/images/bg2.jpeg'},
-  { image: '/images/bg3.png'},
-  { image: '/images/bg4.jpeg'},
-  { image: '/images/bg5.png'},
-  { image: '/images/bg1.png'},
+  { image: '/images/bg2.jpeg' },
+  { image: '/images/bg3.png' },
+  { image: '/images/bg4.jpeg' },
+  { image: '/images/bg5.png' },
+  { image: '/images/bg1.png' },
 ];
 
 const relatedSearches = [
@@ -250,9 +210,7 @@ export default function HomePage() {
           --bg-light: #f8f9fa;
         }
 
-        * {
-          font-family: 'Inter', sans-serif;
-        }
+        * { font-family: 'Inter', sans-serif; }
 
         h1, h2, h3, h4, h5, h6 {
           font-family: 'Syne', sans-serif;
@@ -299,14 +257,8 @@ export default function HomePage() {
         }
 
         @keyframes slideIn {
-          from {
-            opacity: 0;
-            transform: translateY(20px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
+          from { opacity: 0; transform: translateY(20px); }
+          to { opacity: 1; transform: translateY(0); }
         }
 
         @keyframes fadeIn {
@@ -319,97 +271,119 @@ export default function HomePage() {
           50% { transform: translateY(-10px); }
         }
 
-        .animate-in {
-          animation: slideIn 0.6s ease-out forwards;
-        }
-
-        .float-animation {
-          animation: floatUp 3s ease-in-out infinite;
-        }
+        .animate-in { animation: slideIn 0.6s ease-out forwards; }
+        .float-animation { animation: floatUp 3s ease-in-out infinite; }
       `}</style>
 
+     {/* ═══════════════════════════════════════
+    HERO SLIDER
+═══════════════════════════════════════ */}
+<section
+  className="relative w-full overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900"
+  style={{ height: 'clamp(320px, 60vw, 100svh)' }}
+>
+  {/* Grid overlay */}
+  <div
+    className="absolute inset-0 opacity-20 pointer-events-none"
+    style={{
+      backgroundImage: `linear-gradient(0deg, transparent 24%, rgba(0, 82, 204, 0.1) 25%, rgba(0, 82, 204, 0.1) 26%, transparent 27%, transparent 74%, rgba(0, 82, 204, 0.1) 75%, rgba(0, 82, 204, 0.1) 76%, transparent 77%, transparent),
+                        linear-gradient(90deg, transparent 24%, rgba(0, 82, 204, 0.1) 25%, rgba(0, 82, 204, 0.1) 26%, transparent 27%, transparent 74%, rgba(0, 82, 204, 0.1) 75%, rgba(0, 82, 204, 0.1) 76%, transparent 77%, transparent)`,
+      backgroundSize: 'clamp(30px, 5vw, 50px) clamp(30px, 5vw, 50px)',
+    }}
+  />
+
+  {/* Slides track */}
+  <div
+    className="absolute inset-0 flex transition-transform duration-700 ease-in-out will-change-transform"
+    style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+  >
+    {heroSlides.map((slide, i) => (
+      <div key={i} className="relative min-w-full h-full flex-shrink-0">
+        <Image
+          src={slide.image}
+          alt="EV Fast Charging Background"
+          fill
+          priority={i === 0}
+          sizes="100vw"
+          className="object-contain lg:object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/15 to-transparent" />
+      </div>
+    ))}
+  </div>
+
+  {/* Content area */}
+  <div className="relative z-20 h-full flex items-center">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div
+        className="max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-3xl animate-in"
+        style={{ animationDelay: '0.2s' }}
+      >
+        {/* Your slide content goes here */}
+      </div>
+    </div>
+  </div>
+
+  {/* Prev button */}
+  <button
+    onClick={prevSlide}
+    aria-label="Previous slide"
+    className="absolute left-2 sm:left-4 lg:left-8 top-1/2 -translate-y-1/2 z-30
+               w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12
+               rounded-full bg-white/10 hover:bg-white/25 active:bg-white/30
+               border border-white/30 flex items-center justify-center
+               text-white transition-all duration-300 backdrop-blur-sm
+               hover:scale-110 active:scale-95 focus-visible:outline-none
+               focus-visible:ring-2 focus-visible:ring-white/60"
+  >
+    <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" />
+  </button>
+
+  {/* Next button */}
+  <button
+    onClick={nextSlide}
+    aria-label="Next slide"
+    className="absolute right-2 sm:right-4 lg:right-8 top-1/2 -translate-y-1/2 z-30
+               w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12
+               rounded-full bg-white/10 hover:bg-white/25 active:bg-white/30
+               border border-white/30 flex items-center justify-center
+               text-white transition-all duration-300 backdrop-blur-sm
+               hover:scale-110 active:scale-95 focus-visible:outline-none
+               focus-visible:ring-2 focus-visible:ring-white/60"
+  >
+    <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" />
+  </button>
+
+  {/* Dot indicators */}
+  <div className="absolute bottom-3 sm:bottom-5 lg:bottom-8 left-1/2 -translate-x-1/2 z-30 flex items-center gap-1.5 sm:gap-2">
+    {heroSlides.map((_, i) => (
+      <button
+        key={i}
+        onClick={() => goToSlide(i)}
+        aria-label={`Go to slide ${i + 1}`}
+        className={`transition-all duration-300 rounded-full ${
+          i === currentSlide
+            ? 'w-5 sm:w-6 lg:w-8 h-1.5 sm:h-2 bg-emerald-500 shadow-lg shadow-emerald-500/50'
+            : 'w-1.5 h-1.5 sm:w-2 sm:h-2 bg-white/30 hover:bg-white/60'
+        }`}
+      />
+    ))}
+  </div>
+
+  {/* Slide counter */}
+  <div className="absolute bottom-3 right-3 sm:bottom-5 sm:right-5 lg:bottom-8 lg:right-8 z-30
+                  text-white/70 text-[10px] sm:text-xs lg:text-sm font-medium
+                  backdrop-blur-sm px-2 py-0.5 sm:px-3 sm:py-1 rounded-full bg-black/20">
+    <span className="text-white font-bold">
+      {String(currentSlide + 1).padStart(2, '0')}
+    </span>
+    <span className="mx-1 sm:mx-2">/</span>
+    <span>{String(heroSlides.length).padStart(2, '0')}</span>
+  </div>
+</section>
+
       {/* ═══════════════════════════════════════
-          HERO SLIDER - ENHANCED
-      ═══════════════════════════════════════ */}
-      <section className="relative h-screen overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900">
-        {/* Animated background grid */}
-        <div className="absolute inset-0 opacity-20" style={{
-          backgroundImage: `linear-gradient(0deg, transparent 24%, rgba(0, 82, 204, 0.1) 25%, rgba(0, 82, 204, 0.1) 26%, transparent 27%, transparent 74%, rgba(0, 82, 204, 0.1) 75%, rgba(0, 82, 204, 0.1) 76%, transparent 77%, transparent),
-                            linear-gradient(90deg, transparent 24%, rgba(0, 82, 204, 0.1) 25%, rgba(0, 82, 204, 0.1) 26%, transparent 27%, transparent 74%, rgba(0, 82, 204, 0.1) 75%, rgba(0, 82, 204, 0.1) 76%, transparent 77%, transparent)`,
-          backgroundSize: '50px 50px',
-        }} />
-
-        {/* Slides */}
-        <div className="absolute inset-0 flex transition-transform duration-700 ease-in-out"
-          style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
-          {heroSlides.map((slide, i) => (
-            <div key={i} className="relative min-w-full h-full flex-shrink-0">
-             <Image
-  src={slide.image}
-  alt="EV Fast Charging Background"
-  fill
-  priority={i === 0}
-  className="object-cover"
-/>
-              <div className="absolute inset-0 bg-gradient-to-r from-black/20 via-black/10 to-transparent" />
-            </div>
-          ))}
-        </div>
-
-        {/* Hero Content */}
-        <div className="relative z-20 h-full flex items-center">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-            <div className="max-w-3xl animate-in" style={{ animationDelay: '0.2s' }}>
-             
-             
-              
-              
-            </div>
-          </div>
-        </div>
-
-        {/* Navigation Controls */}
-        <button
-          onClick={prevSlide}
-          aria-label="Previous slide"
-          className="absolute left-8 top-1/2 -translate-y-1/2 z-30 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 border border-white/30 flex items-center justify-center text-white transition-all duration-300 backdrop-blur-sm hover:scale-110"
-        >
-          <ChevronLeft size={24} />
-        </button>
-
-        <button
-          onClick={nextSlide}
-          aria-label="Next slide"
-          className="absolute right-8 top-1/2 -translate-y-1/2 z-30 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 border border-white/30 flex items-center justify-center text-white transition-all duration-300 backdrop-blur-sm hover:scale-110"
-        >
-          <ChevronRight size={24} />
-        </button>
-
-        {/* Dot Indicators */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 flex gap-3">
-          {heroSlides.map((_, i) => (
-            <button
-              key={i}
-              onClick={() => goToSlide(i)}
-              className={`transition-all duration-300 rounded-full ${
-                i === currentSlide
-                  ? 'w-8 h-3 bg-emerald-500 shadow-lg shadow-emerald-500/50'
-                  : 'w-3 h-3 bg-white/30 hover:bg-white/60'
-              }`}
-            />
-          ))}
-        </div>
-
-        {/* Slide Counter */}
-        <div className="absolute bottom-8 right-8 z-30 text-white/70 text-sm font-medium hidden sm:block backdrop-blur">
-          <span className="text-white font-bold">{String(currentSlide + 1).padStart(2, '0')}</span>
-          <span className="mx-2">/</span>
-          <span>{String(heroSlides.length).padStart(2, '0')}</span>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════
-          ABOUT - REDESIGNED
+          ABOUT
       ═══════════════════════════════════════ */}
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -428,10 +402,6 @@ export default function HomePage() {
               <p className="text-lg text-gray-600 leading-relaxed mb-8">
                 Our comprehensive product suite includes <strong>fast charging stations</strong>, <strong>renewable energy storage systems</strong>, <strong>grid management solutions</strong>, and <strong>industrial charging networks</strong>.
               </p>
-              <div className="flex items-end gap-8">
-               
-                
-              </div>
             </div>
 
             <div className="grid grid-cols-2 gap-6">
@@ -451,10 +421,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
- {/* ═══════════════════════════════════════
-          Products
-      ═══════════════════════════════════════ */}
-    {/* ═══════════════════════════════════════
+
+
+      {/* ═══════════════════════════════════════
           PRODUCTS - FIXED
       ═══════════════════════════════════════ */}
       <section className="py-12 bg-gradient-to-b from-white to-slate-50">
@@ -513,8 +482,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
       {/* ═══════════════════════════════════════
-          ADVANTAGES - REDESIGNED
+          ADVANTAGES
       ═══════════════════════════════════════ */}
       <section className="py-12 bg-gradient-to-r from-slate-900 via-blue-900 to-slate-900 text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10" style={{
@@ -592,19 +562,13 @@ export default function HomePage() {
                   alt={activeApp.title}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  onError={(e) => {
-                    e.currentTarget.style.display = 'none';
-                  }}
+                  onError={(e) => { e.currentTarget.style.display = 'none'; }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
               </div>
               <div>
-                <h3 className="text-4xl font-bold text-gray-900 mb-6">
-                  {activeApp.title}
-                </h3>
-                <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                  {activeApp.desc}
-                </p>
+                <h3 className="text-4xl font-bold text-gray-900 mb-6">{activeApp.title}</h3>
+                <p className="text-lg text-gray-700 leading-relaxed mb-8">{activeApp.desc}</p>
                 <Link
                   href={activeApp.href}
                   className="inline-flex items-center gap-2 px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl transition-all duration-300 group"
@@ -626,9 +590,7 @@ export default function HomePage() {
             <div className="inline-block text-xs font-bold tracking-widest uppercase text-emerald-600 mb-3 px-3 py-1 bg-emerald-50 rounded-full">
               Case Studies
             </div>
-            <h2 className="text-5xl font-bold text-gray-900 mt-6">
-              Real-World Impact
-            </h2>
+            <h2 className="text-5xl font-bold text-gray-900 mt-6">Real-World Impact</h2>
           </div>
 
           <div className="grid sm:grid-cols-2 gap-8">
@@ -637,18 +599,14 @@ export default function HomePage() {
                 key={i}
                 href={c.href}
                 className="group relative rounded-3xl overflow-hidden aspect-video flex items-end transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border-4 border-transparent"
-                style={{
-                  borderColor: activeCaseIdx === i ? '#00d966' : 'transparent',
-              }}
+                style={{ borderColor: activeCaseIdx === i ? '#00d966' : 'transparent' }}
               >
                 <Image
                   src={c.image}
                   alt={c.title}
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
-                  onError={(e) => {
-                    e.currentTarget.style.display = 'none';
-                  }}
+                  onError={(e) => { e.currentTarget.style.display = 'none'; }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
                 <div className="relative z-10 p-8 w-full">
@@ -686,9 +644,7 @@ export default function HomePage() {
       ═══════════════════════════════════════ */}
       <section className="py-20 bg-gradient-to-r from-blue-600 to-emerald-600 text-white">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl sm:text-5xl font-bold mb-4">
-            Stay Updated
-          </h2>
+          <h2 className="text-4xl sm:text-5xl font-bold mb-4">Stay Updated</h2>
           <p className="text-lg text-white/90 mb-10">
             Get the latest updates on EV charging innovation and industry insights.
           </p>

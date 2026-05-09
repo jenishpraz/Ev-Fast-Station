@@ -13,7 +13,7 @@ const navLinks = [
     href: '/products',
     children: [
       { label: 'EV Charging Stations', href: '/products/ev-charging-stations' },
-      // { label: 'Photovoltaic Energy Storage Systems', href: '/products/photovoltaic-energy-storage' },
+     { label: 'Photovoltaic Energy Storage Systems', href: '/products/photovoltaic-energy-storage' },
       // { label: 'Power Transformers', href: '/products/power-transformers' },
       // { label: 'High and Low Voltage Switchgears', href: '/products/switchgears' },
     ],
