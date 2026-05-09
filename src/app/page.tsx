@@ -22,7 +22,7 @@ const BASE_CDN = 'https://shopcdnpro.grainajz.com/category/61476/2176/';
 const allProducts = [
   {
     id: 'pv-1',
-    title: 'WL-E-CORE WOLUN Megawatt Energy Storage System',
+    title: 'WL-E-CORE Ev Megawatt Energy Storage System',
           image: `/images/products/p126.jpeg`,
     link: '/products',
     tag: 'Photovoltaic Energy Storage Systems',
