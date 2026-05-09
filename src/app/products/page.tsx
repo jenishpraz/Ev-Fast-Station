@@ -1,6 +1,6 @@
 ﻿'use client';
 
-import React, { useState } from 'react';
+import React, { useState, Suspense } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useSearchParams } from 'next/navigation';
@@ -20,7 +20,7 @@ interface ProductCategory {
   products: Product[];
 }
 
-const ProductSection: React.FC = () => {
+const ProductSectionInner: React.FC = () => {
   const searchParams = useSearchParams();
   const initialCategory = searchParams.get('category') || 'all';
 
@@ -815,7 +815,7 @@ const getPagination = (current: number, total: number) => {
   category: 'EV Charging Stations',
 },
 
-// ── Page 12 (same product set as p11 but different URL slugs — deduplicated unique ones) ──
+// ── Page 12 ──
 {
   id: 'ev-p12-1',
   title: 'Waterproof IP64 Wallbox EV Charger 32A Type 2 AC Home Wall-Mounted EV Charging Station',
@@ -965,7 +965,6 @@ const getPagination = (current: number, total: number) => {
   link: '/colorful-plastic-shell',
   category: 'EV Charging Stations',
 },
-
       ],
     },
 
@@ -977,11 +976,11 @@ const getPagination = (current: number, total: number) => {
       name: 'Photovoltaic Energy Storage Systems',
       slug: 'photovoltaic-energy-storage-systems',
       products: [
-         {
+        {
           id: 'pv-1',
           title: 'WL-E-CORE ev Megawatt Energy Storage System',
           image: `/images/products/p126.jpg`,
-          link: '/wl-e-core-ev-megawatt-energy-storage-system',
+          link: '/wl-e-core-wolun-megawatt-energy-storage-system',
           category: 'Photovoltaic Energy Storage Systems',
         },
         {
@@ -1026,7 +1025,6 @@ const getPagination = (current: number, total: number) => {
           link: '/512v-15kwh-5kwhx3-parallel-module-stacked-energy-storage-system',
           category: 'Photovoltaic Energy Storage Systems',
         },
-
       ],
     },
   ];
@@ -1134,56 +1132,56 @@ const getPagination = (current: number, total: number) => {
               ))}
             </div>
 
-           {/* PAGINATION */}
-{totalPages > 1 && (
-  <div className="flex justify-center items-center gap-2 mt-12">
+            {/* PAGINATION */}
+            {totalPages > 1 && (
+              <div className="flex justify-center items-center gap-2 mt-12">
 
-    {/* PREV */}
-    <button
-      onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))}
-      disabled={currentPage === 1}
-      className="px-4 py-2 rounded-lg text-sm font-medium border border-green-200 text-green-700
-                 hover:bg-green-50 hover:border-green-400 transition
-                 disabled:opacity-40 disabled:hover:bg-transparent"
-    >
-      ← Prev
-    </button>
+                {/* PREV */}
+                <button
+                  onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))}
+                  disabled={currentPage === 1}
+                  className="px-4 py-2 rounded-lg text-sm font-medium border border-green-200 text-green-700
+                             hover:bg-green-50 hover:border-green-400 transition
+                             disabled:opacity-40 disabled:hover:bg-transparent"
+                >
+                  ← Prev
+                </button>
 
-    {/* PAGE NUMBERS */}
-    {getPagination(currentPage, totalPages).map((page, i) =>
-      page === '...' ? (
-        <span key={i} className="px-2 text-green-300 font-semibold">
-          ...
-        </span>
-      ) : (
-        <button
-          key={i}
-          onClick={() => setCurrentPage(page as number)}
-          className={`w-10 h-10 rounded-lg text-sm font-semibold transition border
-            ${
-              currentPage === page
-                ? 'bg-green-600 text-white border-green-600 shadow-md'
-                : 'text-green-700 border-green-200 hover:bg-green-50 hover:border-green-400'
-            }`}
-        >
-          {page}
-        </button>
-      )
-    )}
+                {/* PAGE NUMBERS */}
+                {getPagination(currentPage, totalPages).map((page, i) =>
+                  page === '...' ? (
+                    <span key={i} className="px-2 text-green-300 font-semibold">
+                      ...
+                    </span>
+                  ) : (
+                    <button
+                      key={i}
+                      onClick={() => setCurrentPage(page as number)}
+                      className={`w-10 h-10 rounded-lg text-sm font-semibold transition border
+                        ${
+                          currentPage === page
+                            ? 'bg-green-600 text-white border-green-600 shadow-md'
+                            : 'text-green-700 border-green-200 hover:bg-green-50 hover:border-green-400'
+                        }`}
+                    >
+                      {page}
+                    </button>
+                  )
+                )}
 
-    {/* NEXT */}
-    <button
-      onClick={() => setCurrentPage((p) => Math.min(p + 1, totalPages))}
-      disabled={currentPage === totalPages}
-      className="px-4 py-2 rounded-lg text-sm font-medium border border-green-200 text-green-700
-                 hover:bg-green-50 hover:border-green-400 transition
-                 disabled:opacity-40 disabled:hover:bg-transparent"
-    >
-      Next →
-    </button>
+                {/* NEXT */}
+                <button
+                  onClick={() => setCurrentPage((p) => Math.min(p + 1, totalPages))}
+                  disabled={currentPage === totalPages}
+                  className="px-4 py-2 rounded-lg text-sm font-medium border border-green-200 text-green-700
+                             hover:bg-green-50 hover:border-green-400 transition
+                             disabled:opacity-40 disabled:hover:bg-transparent"
+                >
+                  Next →
+                </button>
 
-  </div>
-)}
+              </div>
+            )}
           </div>
         </div>
       </div>
@@ -1195,9 +1193,9 @@ const getPagination = (current: number, total: number) => {
           onClick={() => setSelectedProduct(null)}
         >
           <div
-  className="bg-white rounded-lg p-6 max-w-md w-full relative max-h-[90vh] overflow-y-auto"
-  onClick={(e) => e.stopPropagation()}
->
+            className="bg-white rounded-lg p-6 max-w-md w-full relative max-h-[90vh] overflow-y-auto"
+            onClick={(e) => e.stopPropagation()}
+          >
             <button
               onClick={() => setSelectedProduct(null)}
               className="absolute top-3 right-3 text-slate-400 hover:text-slate-700 text-xl font-bold"
@@ -1206,16 +1204,16 @@ const getPagination = (current: number, total: number) => {
             </button>
 
             <div className="w-full bg-slate-100 rounded mb-4 flex items-center justify-center overflow-hidden">
-  <img
-    src={selectedProduct.image}
-    alt={selectedProduct.title}
-    className="w-full h-auto max-h-[60vh] object-contain rounded"
-    onError={(e) => {
-      (e.target as HTMLImageElement).src =
-        'https://via.placeholder.com/400x300?text=Image+Not+Found';
-    }}
-  />
-</div>
+              <img
+                src={selectedProduct.image}
+                alt={selectedProduct.title}
+                className="w-full h-auto max-h-[60vh] object-contain rounded"
+                onError={(e) => {
+                  (e.target as HTMLImageElement).src =
+                    'https://via.placeholder.com/400x300?text=Image+Not+Found';
+                }}
+              />
+            </div>
 
             <h2 className="text-lg font-bold mb-2 text-slate-800">
               {selectedProduct.title}
@@ -1232,6 +1230,19 @@ const getPagination = (current: number, total: number) => {
         </div>
       )}
     </div>
+  );
+};
+
+// ─── Suspense wrapper (required because useSearchParams needs it) ───
+const ProductSection: React.FC = () => {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen flex items-center justify-center">
+        <p className="text-slate-500 text-lg">Loading products...</p>
+      </div>
+    }>
+      <ProductSectionInner />
+    </Suspense>
   );
 };
 
