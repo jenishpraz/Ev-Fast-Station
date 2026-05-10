@@ -128,70 +128,70 @@ const ProductSectionInner: React.FC = () => {
           link: "/wle1214-dc360kw",
           category: "EV Charging Stations",
         },
-        {
-          id: "ev-p1-1",
-          title: "DC Charging Station 30kW to 40kW",
-          image: `/images/products/p1.jpg`,
-          link: "/dc-charging-station-30kw-to-40kw",
-          category: "EV Charging Stations",
-        },
-        {
-          id: "ev-p1-2",
-          title: "DC Charging Station 30kW to 40kW",
-          image: `/images/products/p2.jpg`,
-          link: "/dc-charging-station-30kw-to-40kw608",
-          category: "EV Charging Stations",
-        },
-        {
-          id: "ev-p1-3",
-          title: "DC Charging Station 30kW to 40kW",
-          image: `/images/products/p3.jpg`,
-          link: "/dc-charging-station-30kw-to-40kw935",
-          category: "EV Charging Stations",
-        },
-        {
-          id: "ev-p1-4",
-          title: "EV DC Charging Station 30kW to 60kW",
-          image: `/images/products/p4.jpg`,
-          link: "/wle1112-dc30kw",
-          category: "EV Charging Stations",
-        },
-        {
-          id: "ev-p1-5",
-          title:
-            "Home Commercial Use OCPP1.6J RFID Card IP54 DC Car EV Charging Station 20kW to 60kW",
-          image: `/images/products/p5.jpg`,
-          link: "/home-commercila-use-ocpp16j-rfid-card-ip54-dc-ev-charging-station-20kw-to-60kw",
-          category: "EV Charging Stations",
-        },
-        {
-          id: "ev-p1-6",
-          title: "EV DC Charging Station 30kW to 60kW",
-          image: `/images/products/p6.jpg`,
-          link: "/wle1112-dc20kw",
-          category: "EV Charging Stations",
-        },
-        {
-          id: "ev-p1-7",
-          title: "Without Screen DC Electric Charging Station 120kW",
-          image: `/images/products/p7.jpg`,
-          link: "/without-screen-dc-electric-charging-station-120kw",
-          category: "EV Charging Stations",
-        },
-        {
-          id: "ev-p1-8",
-          title: "Without Screen DC Electric Charging Station 120kW",
-          image: `/images/products/p8.jpg`,
-          link: "/without-screen-dc-electric-charging-station-120kw691",
-          category: "EV Charging Stations",
-        },
-        {
-          id: "ev-p1-9",
-          title: "Without Screen DC Electric Charging Station 120kW",
-          image: `/images/products/p9.jpg`,
-          link: "/without-screen-dc-electric-charging-station-120kw855",
-          category: "EV Charging Stations",
-        },
+        // {
+        //   id: "ev-p1-1",
+        //   title: "DC Charging Station 30kW to 40kW",
+        //   image: `/images/products/p1.jpg`,
+        //   link: "/dc-charging-station-30kw-to-40kw",
+        //   category: "EV Charging Stations",
+        // },
+        // {
+        //   id: "ev-p1-2",
+        //   title: "DC Charging Station 30kW to 40kW",
+        //   image: `/images/products/p2.jpg`,
+        //   link: "/dc-charging-station-30kw-to-40kw608",
+        //   category: "EV Charging Stations",
+        // },
+        // {
+        //   id: "ev-p1-3",
+        //   title: "DC Charging Station 30kW to 40kW",
+        //   image: `/images/products/p3.jpg`,
+        //   link: "/dc-charging-station-30kw-to-40kw935",
+        //   category: "EV Charging Stations",
+        // },
+        // {
+        //   id: "ev-p1-4",
+        //   title: "EV DC Charging Station 30kW to 60kW",
+        //   image: `/images/products/p4.jpg`,
+        //   link: "/wle1112-dc30kw",
+        //   category: "EV Charging Stations",
+        // },
+        // {
+        //   id: "ev-p1-5",
+        //   title:
+        //     "Home Commercial Use OCPP1.6J RFID Card IP54 DC Car EV Charging Station 20kW to 60kW",
+        //   image: `/images/products/p5.jpg`,
+        //   link: "/home-commercila-use-ocpp16j-rfid-card-ip54-dc-ev-charging-station-20kw-to-60kw",
+        //   category: "EV Charging Stations",
+        // },
+        // {
+        //   id: "ev-p1-6",
+        //   title: "EV DC Charging Station 30kW to 60kW",
+        //   image: `/images/products/p6.jpg`,
+        //   link: "/wle1112-dc20kw",
+        //   category: "EV Charging Stations",
+        // },
+        // {
+        //   id: "ev-p1-7",
+        //   title: "Without Screen DC Electric Charging Station 120kW",
+        //   image: `/images/products/p7.jpg`,
+        //   link: "/without-screen-dc-electric-charging-station-120kw",
+        //   category: "EV Charging Stations",
+        // },
+        // {
+        //   id: "ev-p1-8",
+        //   title: "Without Screen DC Electric Charging Station 120kW",
+        //   image: `/images/products/p8.jpg`,
+        //   link: "/without-screen-dc-electric-charging-station-120kw691",
+        //   category: "EV Charging Stations",
+        // },
+        // {
+        //   id: "ev-p1-9",
+        //   title: "Without Screen DC Electric Charging Station 120kW",
+        //   image: `/images/products/p9.jpg`,
+        //   link: "/without-screen-dc-electric-charging-station-120kw855",
+        //   category: "EV Charging Stations",
+        // },
         {
           id: "ev-p2-7",
           title: "Low Noise DC Electric Charging Station 120kW",
@@ -1047,66 +1047,66 @@ const ProductSectionInner: React.FC = () => {
     // ─────────────────────────────────────────────
     // PHOTOVOLTAIC ENERGY STORAGE SYSTEMS
     // ─────────────────────────────────────────────
-    {
-      id: "pv-storage",
-      name: "Photovoltaic Energy Storage Systems",
-      slug: "photovoltaic-energy-storage-systems",
-      products: [
-        {
-          id: "pv-1",
-          title: "WL-E-CORE ev Megawatt Energy Storage System",
-          image: `/images/products/p126.jpeg`,
-          link: "/wl-e-core-wolun-megawatt-energy-storage-system",
-          category: "Photovoltaic Energy Storage Systems",
-        },
-        {
-          id: "pv-2",
-          title:
-            "WL-E-CORE Export-grade Outdoor Cabinet-type Commercial Energy Storage System",
-          image: `/images/products/p127.jpg`,
-          link: "/wl-e-core-export-grade-outdoor-cabinet-type-commercial-energy-storage-system",
-          category: "Photovoltaic Energy Storage Systems",
-        },
-        {
-          id: "pv-3",
-          title:
-            "15KWh / 30KWh Floor-mounted Mobile Cabinet Energy Storage System",
-          image: `/images/products/p128.jpg`,
-          link: "/15kwh/30kwh-floor-mounted-mobile-cabinet-energy-storage-system",
-          category: "Photovoltaic Energy Storage Systems",
-        },
-        {
-          id: "pv-4",
-          title: "Wall-mounted Energy Storage System",
-          image: `/images/products/p129.jpg`,
-          link: "/wall-mounted-energy-storage-system",
-          category: "Photovoltaic Energy Storage Systems",
-        },
-        {
-          id: "pv-5",
-          title: "5KWh / 10KWh Battery + Inverter All-in-One Unit",
-          image: `/images/products/p130.jpg`,
-          link: "/5kwh/10kwh-batteryinverter-all-in-one-unit",
-          category: "Photovoltaic Energy Storage Systems",
-        },
-        {
-          id: "pv-6",
-          title:
-            "Application Fields of High-Performance Lithium-Ion Battery Energy Storage Systems for Residential and Commercial Use",
-          image: `/images/products/p131.jpg`,
-          link: "/application-fields-of-high-performance-lithium-ion-battery-energy-storage-systems-for-residential-and-commercial-use",
-          category: "Photovoltaic Energy Storage Systems",
-        },
-        {
-          id: "pv-7",
-          title:
-            "51.2V 15KWh (5KWh × 3) Parallel Module Stacked Energy Storage System",
-          image: `/images/products/p132.jpg`,
-          link: "/512v-15kwh-5kwhx3-parallel-module-stacked-energy-storage-system",
-          category: "Photovoltaic Energy Storage Systems",
-        },
-      ],
-    },
+    // {
+    //   id: "pv-storage",
+    //   name: "Photovoltaic Energy Storage Systems",
+    //   slug: "photovoltaic-energy-storage-systems",
+    //   products: [
+    //     {
+    //       id: "pv-1",
+    //       title: "WL-E-CORE ev Megawatt Energy Storage System",
+    //       image: `/images/products/p126.jpeg`,
+    //       link: "/wl-e-core-wolun-megawatt-energy-storage-system",
+    //       category: "Photovoltaic Energy Storage Systems",
+    //     },
+    //     {
+    //       id: "pv-2",
+    //       title:
+    //         "WL-E-CORE Export-grade Outdoor Cabinet-type Commercial Energy Storage System",
+    //       image: `/images/products/p127.jpg`,
+    //       link: "/wl-e-core-export-grade-outdoor-cabinet-type-commercial-energy-storage-system",
+    //       category: "Photovoltaic Energy Storage Systems",
+    //     },
+    //     {
+    //       id: "pv-3",
+    //       title:
+    //         "15KWh / 30KWh Floor-mounted Mobile Cabinet Energy Storage System",
+    //       image: `/images/products/p128.jpg`,
+    //       link: "/15kwh/30kwh-floor-mounted-mobile-cabinet-energy-storage-system",
+    //       category: "Photovoltaic Energy Storage Systems",
+    //     },
+    //     {
+    //       id: "pv-4",
+    //       title: "Wall-mounted Energy Storage System",
+    //       image: `/images/products/p129.jpg`,
+    //       link: "/wall-mounted-energy-storage-system",
+    //       category: "Photovoltaic Energy Storage Systems",
+    //     },
+    //     {
+    //       id: "pv-5",
+    //       title: "5KWh / 10KWh Battery + Inverter All-in-One Unit",
+    //       image: `/images/products/p130.jpg`,
+    //       link: "/5kwh/10kwh-batteryinverter-all-in-one-unit",
+    //       category: "Photovoltaic Energy Storage Systems",
+    //     },
+    //     {
+    //       id: "pv-6",
+    //       title:
+    //         "Application Fields of High-Performance Lithium-Ion Battery Energy Storage Systems for Residential and Commercial Use",
+    //       image: `/images/products/p131.jpg`,
+    //       link: "/application-fields-of-high-performance-lithium-ion-battery-energy-storage-systems-for-residential-and-commercial-use",
+    //       category: "Photovoltaic Energy Storage Systems",
+    //     },
+    //     {
+    //       id: "pv-7",
+    //       title:
+    //         "51.2V 15KWh (5KWh × 3) Parallel Module Stacked Energy Storage System",
+    //       image: `/images/products/p132.jpg`,
+    //       link: "/512v-15kwh-5kwhx3-parallel-module-stacked-energy-storage-system",
+    //       category: "Photovoltaic Energy Storage Systems",
+    //     },
+    //   ],
+    // },
   ];
 
   // Flatten all non-"all" products for the ALL PRODUCTS view

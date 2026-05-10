@@ -61,15 +61,34 @@ const ContactPage = () => {
                 <Mail className="text-green-600 w-6 h-6" />
               </div>
               <div>
-                <h3 className="font-bold text-green-700 text-lg">Mail Adress:</h3>
+                <h3 className="font-bold text-green-700 text-lg">Mail Address:</h3>
                 <p className="text-sm mt-1">sarbottamtradingconcern@gmail.com</p>
               </div>
+
             </div>
 
             <div className="flex items-start space-x-4">
               <div className="bg-green-50 p-3 rounded-full">
                 <MapPin className="text-green-600 w-6 h-6" />
               </div>
+
+
+
+                  <div>
+                <h3 className="font-bold text-green-700 text-lg">Head Office:</h3>
+                <p className="text-sm mt-1 leading-relaxed">
+                   Address: China <br/>
+                  Langkou Industrial Zone,Subdistrict, Longhua New District, Shenzhen
+                </p>
+              </div>
+
+            </div>
+
+            <div className="flex items-start space-x-4">
+              <div className="bg-green-50 p-3 rounded-full">
+                <MapPin className="text-green-600 w-6 h-6" />
+              </div>
+
               <div>
                 <h3 className="font-bold text-green-700 text-lg">Office Address:</h3>
                 <p className="text-sm mt-1 leading-relaxed">

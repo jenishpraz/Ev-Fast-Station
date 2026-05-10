@@ -20,36 +20,66 @@ const stats = [
 const BASE_CDN = 'https://shopcdnpro.grainajz.com/category/61476/2176/';
 
 const allProducts = [
+  //  {
+  //   id: 'pv-1',
+  //   title: 'WL-E-CORE Ev Megawatt Energy Storage System',
+  //         image: `/images/products/p126.jpeg`,
+  //   link: '/products',
+  //   tag: 'Photovoltaic Energy Storage Systems',
+  // },
+  // {
+  //   id: 'pv-2',
+  //   title: 'WL-E-CORE Export-grade Outdoor Cabinet-type Commercial Energy Storage System',
+  //         image: `/images/products/p127.jpg`,
+  //   link: '/products',
+  //   tag: 'Photovoltaic Energy Storage Systems',
+  // },
+  // {
+  //   id: 'pv-3',
+  //   title: '15KWh / 30KWh Floor-mounted Mobile Cabinet Energy Storage System',
+  //         image: `/images/products/p128.jpg`,
+  //   link: '/products',
+  //   tag: 'Photovoltaic Energy Storage Systems',
+  // },
+  // {
+  //   id: 'pv-4',
+  //   title: 'Wall-mounted Energy Storage System',
+  //         image: `/images/products/p129.jpg`,
+  //   link: '/products',
+  //   tag: 'Photovoltaic Energy Storage Systems',
+
   {
-    id: 'pv-1',
-    title: 'WL-E-CORE Ev Megawatt Energy Storage System',
-          image: `/images/products/p126.jpeg`,
-    link: '/products',
-    tag: 'Photovoltaic Energy Storage Systems',
-  },
+  id: 'ev-p12-2',
+  title: 'Ev Home 32A GBT EV Charger 7kW Level 2 EV Charging Wallbox Pile OCPP1.J IP63 GB/T',
+          image: `/images/products/p106.jpg`,
+  link: '/products',
+  category: 'EV Charging Stations',
+},
   {
-    id: 'pv-2',
-    title: 'WL-E-CORE Export-grade Outdoor Cabinet-type Commercial Energy Storage System',
-          image: `/images/products/p127.jpg`,
-    link: '/products',
-    tag: 'Photovoltaic Energy Storage Systems',
-  },
+  id: 'ev-p12-6',
+  title: 'Solar EV Wallbox 7kW to 22kW Type 2 OCPP1.6 TUV CE Certificate AC EV Charging',
+          image: `/images/products/p110.jpg`,
+  link: '/products',
+  category: 'EV Charging Stations',
+},
   {
-    id: 'pv-3',
-    title: '15KWh / 30KWh Floor-mounted Mobile Cabinet Energy Storage System',
-          image: `/images/products/p128.jpg`,
-    link: '/products',
-    tag: 'Photovoltaic Energy Storage Systems',
-  },
+  id: 'ev-p13-8',
+  title: 'AC Electric Vehicle Charger 7kW to 22kW',
+          image: `/images/products/p122.jpg`,
+  link: '/products',
+  category: 'EV Charging Stations',
+},
   {
-    id: 'pv-4',
-    title: 'Wall-mounted Energy Storage System',
-          image: `/images/products/p129.jpg`,
-    link: '/products',
-    tag: 'Photovoltaic Energy Storage Systems',
-  },
+  id: 'ev-p6-5',
+  title: 'GBT DC Fast Charger Advertising Screen EV Charger — Commercial OCPP1.6',
+          image: `/images/products/p46.jpg`,
+  link: '/products',
+  category: 'EV Charging Stations',
+},
+  // },
  
 ];
+
 
 // const services = [
 //   {
@@ -470,7 +500,7 @@ export default function HomePage() {
                   </div>
 
                   <div className="p-5 flex flex-col flex-1">
-                    <p className="text-xs text-green-600 font-semibold mb-1">{product.tag}</p>
+                    <p className="text-xs text-green-600 font-semibold mb-1">{product.category}</p>
                     <h3 className="font-bold text-sm text-slate-800 line-clamp-2 group-hover:text-green-600 transition">
                       {product.title}
                     </h3>
